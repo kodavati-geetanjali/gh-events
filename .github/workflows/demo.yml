@@ -49,6 +49,6 @@ jobs:
       - name: Output contents of dist folder
         run: ls 
       - name: Output filename
-        run: echo "The filename is ${{ needs.build.outputs.script-file }}"
+        run: echo "The filename is ${{ needs.build.outputs.dist-path }}"
       - name: Deploy to GitHub Pages
         run: echo "Deploying to GitHub Pages..."
